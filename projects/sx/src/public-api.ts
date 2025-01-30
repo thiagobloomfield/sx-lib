@@ -3,6 +3,8 @@
  */
 export * from './lib/accordion/accordion.module';
 export * from './lib/accordion/accordion.component';
+export * from './lib/assinatura/assinatura.module';
+export * from './lib/assinatura/assinatura.component';
 export * from './lib/basic-card/basic-card.module';
 export * from './lib/basic-card/basic-card.component';
 export * from './lib/button/button.module';

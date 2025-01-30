@@ -24,6 +24,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/sx/src/stories/assinatura.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<AssinaturaComponent>",
+                "defaultValue": "{\r\n  title: 'Assinatura',\r\n  component: AssinaturaComponent,\r\n  tags: ['autodocs'],\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/sx/src/stories/basic-card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -84,6 +94,16 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/sx/src/stories/assinatura.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  name: 'Assinatura',\r\n  args: {\r\n    dadosProfissionalLogado: {\r\n      Nome: '',\r\n      Conselho: '',\r\n      Cpf: '',\r\n      Crm: '',\r\n      Funcao: ''\r\n    },\r\n    logoHospital: ''\r\n  },\r\n  render: (args: any) => ({    \r\n    template: `\r\n      <sx-assinatura\r\n        [dadosProfissionalLogado]=\"dadosProfissionalLogado\"\r\n        [logoHospital]=\"logoHospital\"\r\n      ></sx-assinatura>\r\n    `\r\n  })\r\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/sx/src/stories/basic-card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -129,6 +149,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<AccordionComponent>",
                 "file": "projects/sx/src/stories/accordion.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<AssinaturaComponent>",
+                "file": "projects/sx/src/stories/assinatura.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -201,6 +232,28 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\r\n  name: 'Accordion',\r\n  args: {\r\n    title: 'Header text',\r\n    colorTitle: '#000', \r\n    subtitle: 'Subtitle text',\r\n    colorSubtitle: '#000',\r\n    titleB: '',\r\n    colorTitleB: '',\r\n    subtitleB: '',\r\n    colorSubtitleB: '',\r\n    pathIcon: '',\r\n    pathFillIcon: '',\r\n    viewBoxIcon: '',\r\n    sizeTitle: 'normal',\r\n  },\r\n  render: (args: any) => ({    \r\n    template: `\r\n      <sx-accordion\r\n        [title]=\"'${args.title}'\"\r\n        [subtitle]=\"'${args.subtitle}'\"\r\n        colorSubtitle=\"'${args.colorSubtitle}'\"\r\n      >\r\n        <div class=\"col-md-7 col-sm-12\">\r\n          <p class=\"title\">Lorem Ipsum</p>\r\n          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>\r\n        </div>\r\n\r\n        <div class=\"col-md-5 col-sm-12\">\r\n          <p class=\"title\">Lorem Ipsum</p>\r\n          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>\r\n        </div>\r\n      </sx-accordion>\r\n    `\r\n  })\r\n}"
+                }
+            ],
+            "projects/sx/src/stories/assinatura.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/sx/src/stories/assinatura.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<AssinaturaComponent>",
+                    "defaultValue": "{\r\n  title: 'Assinatura',\r\n  component: AssinaturaComponent,\r\n  tags: ['autodocs'],\r\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/sx/src/stories/assinatura.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  name: 'Assinatura',\r\n  args: {\r\n    dadosProfissionalLogado: {\r\n      Nome: '',\r\n      Conselho: '',\r\n      Cpf: '',\r\n      Crm: '',\r\n      Funcao: ''\r\n    },\r\n    logoHospital: ''\r\n  },\r\n  render: (args: any) => ({    \r\n    template: `\r\n      <sx-assinatura\r\n        [dadosProfissionalLogado]=\"dadosProfissionalLogado\"\r\n        [logoHospital]=\"logoHospital\"\r\n      ></sx-assinatura>\r\n    `\r\n  })\r\n}"
                 }
             ],
             "projects/sx/src/stories/basic-card.stories.ts": [
@@ -320,6 +373,19 @@
                     "kind": 183
                 }
             ],
+            "projects/sx/src/stories/assinatura.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<AssinaturaComponent>",
+                    "file": "projects/sx/src/stories/assinatura.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "projects/sx/src/stories/basic-card.stories.ts": [
                 {
                     "name": "Story",
@@ -411,6 +477,36 @@
             },
             {
                 "filePath": "projects/sx/src/stories/accordion.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/sx/src/stories/assinatura.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/sx/src/stories/assinatura.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/sx/src/stories/assinatura.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
