@@ -9,6 +9,12 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "sx": [
+        "./dist/lib",
+        "./projects/sx/src/public-api"
+      ],
+    },
     "skipLibCheck": true,
     "isolatedModules": true,
     "esModuleInterop": true,

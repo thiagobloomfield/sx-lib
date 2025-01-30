@@ -1,59 +1,69 @@
-# MyWorkspace
+# SX Library
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+## Introdução
+Esta é uma biblioteca Angular chamada `sx`, desenvolvida dentro de um workspace Angular. Ela foi projetada para ser reutilizável e modular.
 
-## Development server
+## Instalação
 
-To start a local development server, run:
+Para instalar as dependências necessárias, execute:
 
-```bash
-ng serve
+```sh
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Construção da Biblioteca
 
-## Code scaffolding
+Para compilar a biblioteca, utilize o comando:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```sh
+ng build sx
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Isso gerará os arquivos compilados na pasta `dist/sx`.
 
-```bash
-ng generate --help
-```
+## Testes
 
-## Building
+Para executar os testes unitários, utilize:
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
+```sh
 ng test
 ```
 
-## Running end-to-end tests
+## Documentação
 
-For end-to-end (e2e) testing, run:
+A biblioteca possui suporte ao Compodoc. Para gerar a documentação, use:
 
-```bash
-ng e2e
+```sh
+npx compodoc -p projects/sx/tsconfig.lib.json -s
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Isso iniciará um servidor local com a documentação gerada.
 
-## Additional Resources
+## Storybook
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+A biblioteca também conta com suporte ao Storybook para visualização dos componentes. Para iniciar o Storybook, execute:
+
+```sh
+npm run storybook
+```
+
+Para gerar a versão estática do Storybook:
+
+```sh
+npm run build-storybook
+```
+
+## Estrutura do Projeto
+
+- `projects/sx/src/lib/` - Contém os componentes e serviços da biblioteca.
+- `projects/sx/src/public-api.ts` - Define os elementos exportados pela biblioteca.
+- `projects/sx/tsconfig.lib.json` - Configuração do TypeScript específica da biblioteca.
+- `projects/sx/ng-package.json` - Configuração para empacotamento da biblioteca.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com melhorias! Antes de enviar um PR, certifique-se de executar os testes e validar as mudanças no Storybook.
+
+## Licença
+
+Esta biblioteca é distribuída sob a licença MIT.
