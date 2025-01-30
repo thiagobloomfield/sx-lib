@@ -29,5 +29,6 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": ["./projects/sx/src/**/*.stories.ts", "./projects/sx/.storybook/preview.ts"],
 }

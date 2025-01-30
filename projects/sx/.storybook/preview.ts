@@ -11,14 +11,7 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-  },
-  initialGlobals: {
-    locale: "pt-BR",
-    locales: {
-      pt_BR: "Posrtuguês Brasil",
-      en_US: "English",
-    },
-  },
+  }
 
 };
 

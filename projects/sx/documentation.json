@@ -68,7 +68,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n  initialGlobals: {\n    locale: \"pt-BR\",\n    locales: {\n      pt_BR: \"Posrtuguês Brasil\",\n      en_US: \"English\",\n    },\n  },\n\n}"
+                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  }\n\n}"
             },
             {
                 "name": "Primary",
@@ -108,7 +108,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  name: 'Label',\n  args: {\n    type: 'content',\n    color: 'default',\n    for: '',\n    size: 'default',\n    isPDF: false,\n    weight: ''\n  },\n  render: (args: any) => ({    \n    template: `\n      <sx-label [size]=\"'small'\" [color]=\"'default'\" [type]=\"'title'\">\n        Label text\n      </sx-label>\n    `\n  })\n}"
+                "defaultValue": "{\n  name: 'Label',\n  argTypes: {\n    type: {\n      description: 'Tipo do label',\n      control: 'radio',\n      options: ['content', 'title', 'body1-bold', 'body2-bold-pdf', 'body2'],\n      type: 'string',\n      defaultValue: 'content',\n      table: {\n        type: { summary: 'string' },\n        defaultValue: { summary: 'content' },\n      },\n    },\n    color: {\n      description: 'Cor do label',\n      control: 'radio',\n      options: [\"default\", \"primary\", \"error\", \"green\", \"yellow\", \"red\", \"black\", \"gray\", \"white\"],\n      type: 'string',\n      defaultValue: 'default',\n      table: {\n        type: { summary: 'string' },\n        defaultValue: { summary: 'default' },\n      },\n    },\n    for: {\n      description: 'Tamanho do label',\n      control: 'text',\n      type: 'string',\n      defaultValue: '',\n      table: {\n        type: { summary: 'string' },\n      },\n    },\n    size: {\n      description: 'Tamanho do label',\n      control: 'radio',\n      options: [\"default\", \"small\", \"large\"],\n      type: 'string',\n      defaultValue: 'default',\n      table: {\n        type: { summary: 'string' },\n        defaultValue: { summary: 'default' },\n      },\n    },\n    isPDF: {\n      description: 'Label no PDF',\n      control: 'boolean',\n      type: 'boolean',\n      defaultValue: 'false',\n      table: {\n        type: { summary: 'boolean' },\n        defaultValue: { summary: 'false' },\n      },\n    },\n    weight: {\n      description: 'Largura do label',\n      control: 'number',\n      type: 'number',\n      table: {\n        type: { summary: 'number' },\n      },\n    },\n  },\n  args: {\n    type: 'content',\n    color: 'default',\n    for: '',\n    size: 'default',\n    isPDF: false,\n    weight: ''\n  },\n  render: (args: any) => ({    \n    template: `\n      <sx-label\n        [type]=\"'${args.type}'\"\n        [color]=\"'${args.color}'\"\n        [size]=\"'${args.size}'\"\n        [for]=\"'${args.for}'\"\n        [isPDF]=\"${args.isPDF}\"\n        [weight]=\"${args.weight}\">\n        Label text\n      </sx-label>\n    `\n  })\n}"
             },
             {
                 "name": "Primary",
@@ -266,7 +266,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  name: 'Label',\n  args: {\n    type: 'content',\n    color: 'default',\n    for: '',\n    size: 'default',\n    isPDF: false,\n    weight: ''\n  },\n  render: (args: any) => ({    \n    template: `\n      <sx-label [size]=\"'small'\" [color]=\"'default'\" [type]=\"'title'\">\n        Label text\n      </sx-label>\n    `\n  })\n}"
+                    "defaultValue": "{\n  name: 'Label',\n  argTypes: {\n    type: {\n      description: 'Tipo do label',\n      control: 'radio',\n      options: ['content', 'title', 'body1-bold', 'body2-bold-pdf', 'body2'],\n      type: 'string',\n      defaultValue: 'content',\n      table: {\n        type: { summary: 'string' },\n        defaultValue: { summary: 'content' },\n      },\n    },\n    color: {\n      description: 'Cor do label',\n      control: 'radio',\n      options: [\"default\", \"primary\", \"error\", \"green\", \"yellow\", \"red\", \"black\", \"gray\", \"white\"],\n      type: 'string',\n      defaultValue: 'default',\n      table: {\n        type: { summary: 'string' },\n        defaultValue: { summary: 'default' },\n      },\n    },\n    for: {\n      description: 'Tamanho do label',\n      control: 'text',\n      type: 'string',\n      defaultValue: '',\n      table: {\n        type: { summary: 'string' },\n      },\n    },\n    size: {\n      description: 'Tamanho do label',\n      control: 'radio',\n      options: [\"default\", \"small\", \"large\"],\n      type: 'string',\n      defaultValue: 'default',\n      table: {\n        type: { summary: 'string' },\n        defaultValue: { summary: 'default' },\n      },\n    },\n    isPDF: {\n      description: 'Label no PDF',\n      control: 'boolean',\n      type: 'boolean',\n      defaultValue: 'false',\n      table: {\n        type: { summary: 'boolean' },\n        defaultValue: { summary: 'false' },\n      },\n    },\n    weight: {\n      description: 'Largura do label',\n      control: 'number',\n      type: 'number',\n      table: {\n        type: { summary: 'number' },\n      },\n    },\n  },\n  args: {\n    type: 'content',\n    color: 'default',\n    for: '',\n    size: 'default',\n    isPDF: false,\n    weight: ''\n  },\n  render: (args: any) => ({    \n    template: `\n      <sx-label\n        [type]=\"'${args.type}'\"\n        [color]=\"'${args.color}'\"\n        [size]=\"'${args.size}'\"\n        [for]=\"'${args.for}'\"\n        [isPDF]=\"${args.isPDF}\"\n        [weight]=\"${args.weight}\">\n        Label text\n      </sx-label>\n    `\n  })\n}"
                 }
             ],
             "projects/sx/src/stories/loader.stories.ts": [
@@ -300,7 +300,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n  initialGlobals: {\n    locale: \"pt-BR\",\n    locales: {\n      pt_BR: \"Posrtuguês Brasil\",\n      en_US: \"English\",\n    },\n  },\n\n}"
+                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  }\n\n}"
                 }
             ]
         },

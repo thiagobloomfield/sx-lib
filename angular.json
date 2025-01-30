@@ -67,7 +67,7 @@
               "-d",
               "projects/sx"
             ],
-            "outputDir": "storybook-static"
+            "outputDir": "docs"
           }
         }
       }
