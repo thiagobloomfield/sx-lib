@@ -98,7 +98,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  name: 'Assinatura',\r\n  args: {\r\n    dadosProfissionalLogado: {\r\n      Nome: '',\r\n      Conselho: '',\r\n      Cpf: '',\r\n      Crm: '',\r\n      Funcao: ''\r\n    },\r\n    logoHospital: ''\r\n  },\r\n  render: (args: any) => ({    \r\n    template: `\r\n      <sx-assinatura\r\n        [dadosProfissionalLogado]=\"dadosProfissionalLogado\"\r\n        [logoHospital]=\"logoHospital\"\r\n      ></sx-assinatura>\r\n    `\r\n  })\r\n}"
+                "defaultValue": "{\r\n  name: 'Assinatura',\r\n  args: {\r\n    dadosProfissionalLogado: {\r\n      Nome: 'Fulano de Tal',\r\n      Conselho: 'Conselheiro',\r\n      Cpf: '123.123.123-05',\r\n      Crm: '78548759582',\r\n      Funcao: 'Medico',\r\n    },\r\n    logoHospital: 'https://cdn-icons-png.flaticon.com/512/1728/1728914.png'\r\n  },\r\n  render: (args: any) => ({    \r\n    props: args,\r\n    template: `<sx-assinatura\r\n      [dadosProfissionalLogado]=\"dadosProfissionalLogado\"\r\n      [logoHospital]=\"logoHospital\">\r\n    </sx-assinatura>`,\r\n  })\r\n}"
             },
             {
                 "name": "Primary",
@@ -253,7 +253,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  name: 'Assinatura',\r\n  args: {\r\n    dadosProfissionalLogado: {\r\n      Nome: '',\r\n      Conselho: '',\r\n      Cpf: '',\r\n      Crm: '',\r\n      Funcao: ''\r\n    },\r\n    logoHospital: ''\r\n  },\r\n  render: (args: any) => ({    \r\n    template: `\r\n      <sx-assinatura\r\n        [dadosProfissionalLogado]=\"dadosProfissionalLogado\"\r\n        [logoHospital]=\"logoHospital\"\r\n      ></sx-assinatura>\r\n    `\r\n  })\r\n}"
+                    "defaultValue": "{\r\n  name: 'Assinatura',\r\n  args: {\r\n    dadosProfissionalLogado: {\r\n      Nome: 'Fulano de Tal',\r\n      Conselho: 'Conselheiro',\r\n      Cpf: '123.123.123-05',\r\n      Crm: '78548759582',\r\n      Funcao: 'Medico',\r\n    },\r\n    logoHospital: 'https://cdn-icons-png.flaticon.com/512/1728/1728914.png'\r\n  },\r\n  render: (args: any) => ({    \r\n    props: args,\r\n    template: `<sx-assinatura\r\n      [dadosProfissionalLogado]=\"dadosProfissionalLogado\"\r\n      [logoHospital]=\"logoHospital\">\r\n    </sx-assinatura>`,\r\n  })\r\n}"
                 }
             ],
             "projects/sx/src/stories/basic-card.stories.ts": [
